@@ -7,7 +7,7 @@ Created on Wed Dec  1 00:13:24 2021
 """
 
 import problem7
-
+import pytest
 def test_valid_email():
     assert problem7.validating_email("johndoe@domainsample.com") == True
     assert problem7.validating_email("john.doe@domainsample.net") == True
@@ -19,6 +19,7 @@ def test_valid_email():
     assert problem7.validating_email("john.doe@.net") == False
     assert problem7.validating_email("john.doe43@domainsample") == False
 
+pytest.main()
 if __name__ == "__main__":
     test_valid_email()
 

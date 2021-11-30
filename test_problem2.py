@@ -7,6 +7,7 @@ Created on Tue Nov 30 20:38:52 2021
 """
 
 import problem2
+import pytest
 
 def test_is_number():
     assert problem2.is_number("35") == True
@@ -21,6 +22,7 @@ def test_gcd_numbers():
     assert problem2.greatest_common_divisor(12, 3) == 3
     assert problem2.greatest_common_divisor(97, 2) == 1
 
+pytest.main()
 if __name__ == "__main__":
     test_is_number()
     test_input_to_number()

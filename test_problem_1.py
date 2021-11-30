@@ -7,6 +7,7 @@ Created on Tue Nov 30 19:06:52 2021
 """
 
 import problem_1
+import pytest
 
 def test_is_number_success():
     assert problem_1.is_number("32") == True
@@ -22,4 +23,4 @@ def temp_conversion():
     assert problem_1.temp_c_to_temp_f("32") == 0
     assert problem_1.temp_c_to_temp_f("1") == -17.22
     
-    
+pytest.main()
